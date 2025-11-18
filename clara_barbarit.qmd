@@ -4,3 +4,20 @@ author: "Clara Barbarit"
 format: html
 ---
 
+```{r}
+typeof(1.5)
+typeof("toto")
+```
+
+### Classes
+= what you create as a developer 
+type = environment = what is given to you
+
+you can create classes from a list or from a vector
+
+```{r}
+data(iris)
+typeof(iris)
+class(iris)
+```
+
