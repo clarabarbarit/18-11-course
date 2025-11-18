@@ -3,4 +3,94 @@ title: "Merge"
 author: "Clara & Louna"
 format: html
 ---
+```{r}
+typeof(1.5)
+typeof("toto")
+```
+
+### Classes
+= what you create as a developer 
+type = environment = what is given to you
+
+you can create classes from a list or from a vector
+
+```{r}
+data(iris)
+typeof(iris)
+class(iris)
+```
+
+
+## Vectors
+Many things in R are vector (most of the other things are list)
+vector = collection of values of the same type (can be a single value)
+
+```{r}
+x <- 15.25
+length(x)
+x[1]
+```
+
+```{r}
+y <- c(1, -2, 45, 1.5, -1e-10)
+y
+typeof(y)
+y[2]
+length(y)
+```
+
+```{r}
+c(x,y)
+```
+
+```{r}
+z <- "Alice"
+length(z)
+```
+
+Salvation comes from the `stringr`package
+
+```{r}
+library(stringr)
+```
+
+```{r}
+str_length(z)
+```
+
+```{r}
+dynamite_shakers <- "🤠 🤠 🤠 🤠"
+dynamite_shakers
+length(dynamite_shakers)
+str_length(dynamite_shakers)
+```
+
+## Indexing
+
+```{r}
+x <- c(6,5,1,2,3,4)
+x[4] <- 15
+x
+y<-x
+y
+x[1] <- 18
+x
+y
+x[c(2,2,1,4,3)]
+```
+
+Assignment can be understood has a value semantic assignment 
+Index is made with vectors of any length
+
+```{r}
+x[c(-1,-4)]
+```
+
+index have to be all positive or all negative
+
+```{r}
+x[c(1,2)] <- c(-34,42)
+```
+
+
 
