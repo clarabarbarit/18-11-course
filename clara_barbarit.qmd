@@ -93,5 +93,60 @@ index have to be all positive or all negative
 x[c(1,2)] <- c(-34,42)
 ```
 
+## Lists 
+
+Vectors must be type uniform
+
+
+```{r}
+broken <- c(1L, 1.5, "toto", FALSE)
+broken
+typeof(broken)
+```
+
+
+## Creating a list
+```{r}
+bar <- list(1L, 1.5, "toto", FALSE)
+bar
+typeof(bar)
+length(bar)
+```
+
+```{r}
+foo <- list(c(1,2,3), TRUE, length)
+foo
+length(foo)
+```
+
+list = vector of vectors
+
+```{r}
+foo[1]
+foo[-2]
+foo[c(3,2,2,1)]
+```
+
+### Side step: weird values
+```{r}
+NA ##missing value
+NULL ## missing object
+NaN ## Not a number
+```
+
+```{r}
+0/0
+1/0
+-1/0
+1/0 - 1/0
+```
+
+```{r}
+x <- list(c(1,2,3), c(TRUE, FALSE), LETTERS[10:15])
+x
+x[5] <- list(c(-2,1))
+```
+
+
 
 
