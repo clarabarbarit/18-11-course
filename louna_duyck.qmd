@@ -2,7 +2,6 @@
 title: "Introduction to Low Level R"
 author: "Louna DUYCK"
 format: html
-editor: visual
 ---
 
 ```{r}
