@@ -66,6 +66,32 @@ length(dynamite_shakers)
 str_length(dynamite_shakers)
 ```
 
+## Indexing
+
+```{r}
+x <- c(6,5,1,2,3,4)
+x[4] <- 15
+x
+y<-x
+y
+x[1] <- 18
+x
+y
+x[c(2,2,1,4,3)]
+```
+
+Assignment can be understood has a value semantic assignment 
+Index is made with vectors of any length
+
+```{r}
+x[c(-1,-4)]
+```
+
+index have to be all positive or all negative
+
+```{r}
+x[c(1,2)] <- c(-34,42)
+```
 
 
 
